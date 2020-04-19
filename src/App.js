@@ -42,37 +42,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardList name="pica4500">
-          {
-            this.state.characters.map(character =>
-              <h1 key={character.id}> {character.name} </h1>
-            )
-          }
-        </CardList>
+        <CardList characters={this.state.characters} />
       </div>
     );
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Hello
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
