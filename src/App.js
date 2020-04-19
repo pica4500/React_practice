@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -22,6 +21,15 @@ class App extends Component {
       ]
     }
   }
+
+  // This code is studying about Promise.
+  // fetch will return Promise. and then() will rap resolve.
+  // componentDidMount() {
+  //   fetch('https://jsonplaceholder.typicode.com/users')
+  //     .then(response => response.json())
+  //     .then(users => console.log(users))
+  // }
+
   render() {
     return (
       <div className="App">
