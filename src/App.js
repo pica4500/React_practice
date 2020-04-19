@@ -8,13 +8,16 @@ class App extends Component {
     this.state = {
       characters: [
         {
-          name: '시오리'
+          name: '시오리',
+          id: 'a'
         },
         {
-          name: '사렌'
+          name: '사렌',
+          id: 'b',
         },
         {
-          name: '쿄우카'
+          name: '쿄우카',
+          id: 'c'
         },
       ]
     }
@@ -23,7 +26,9 @@ class App extends Component {
     return (
       <div className="App">
         {
-          this.state.characters.map(character => <h1> {character.name} </h1>)
+          this.state.characters.map(character =>
+            <h1 key={character.id}> {character.name} </h1>
+          )
         }
       </div>
     );
