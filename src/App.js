@@ -9,22 +9,27 @@ class App extends Component {
       characters: [
         {
           name: '시오리',
+          link: 'https://redive.estertion.win/card/full/103831.webp@w200',
           id: '1'
         },
         {
           name: '사렌',
+          link: 'https://redive.estertion.win/card/full/102831.webp@w200',
           id: '2',
         },
         {
           name: '쿄우카',
+          link: 'https://redive.estertion.win/card/full/103631.webp@w200',
           id: '3'
         },
         {
           name: '하츠네',
+          link: 'https://redive.estertion.win/card/full/101231.webp@w200',
           id: '4'
         },
         {
           name: '캬루',
+          link: 'https://redive.estertion.win/card/full/106031.webp@w200',
           id: '5'
         },
       ]
