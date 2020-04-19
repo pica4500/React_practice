@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { CardList } from './components/card-list/card-list.component';
 
 class App extends Component {
   constructor() {
@@ -8,15 +9,23 @@ class App extends Component {
       characters: [
         {
           name: '시오리',
-          id: 'a'
+          id: '1'
         },
         {
           name: '사렌',
-          id: 'b',
+          id: '2',
         },
         {
           name: '쿄우카',
-          id: 'c'
+          id: '3'
+        },
+        {
+          name: '하츠네',
+          id: '4'
+        },
+        {
+          name: '캬루',
+          id: '5'
         },
       ]
     }
@@ -33,11 +42,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {
-          this.state.characters.map(character =>
-            <h1 key={character.id}> {character.name} </h1>
-          )
-        }
+        <CardList name="pica4500">
+          {
+            this.state.characters.map(character =>
+              <h1 key={character.id}> {character.name} </h1>
+            )
+          }
+        </CardList>
       </div>
     );
   }
